@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="90.0px"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="330.0px">
+
+                <ImageView
+                    android:id="@+id/act_cshw_banner_rg_iv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="330.0px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_banner_home_cs" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/act_cshw_salary_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="98.0px"
+                android:background="@drawable/common_white_selector"
+                android:gravity="center_vertical">
+
+                <View
+                    android:id="@+id/act_cshw_as_moneysign_v"
+                    android:layout_width="30.0px"
+                    android:layout_height="30.0px"
+                    android:layout_marginLeft="68.0px"
+                    android:background="@drawable/act_common_as_money_png1" />
+
+                <TextView
+                    android:id="@+id/act_cshw_salary_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0px"
+                    android:text="服务费用"
+                    android:textColor="#ff231815"
+                    android:textSize="23.0px" />
+
+                <TextView
+                    android:id="@+id/act_cshw_salary_money_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0px"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:text="60元"
+                    android:textColor="#ffe83618"
+                    android:textSize="35.0px" />
+
+                <TextView
+                    android:id="@+id/act_cshw_salary_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0px"
+                    android:text="家庭保洁"
+                    android:textColor="#ff231815"
+                    android:textSize="23.0px" />
+
+                <View
+                    android:id="@+id/act_cshw_salary_divider_v"
+                    android:layout_width="2.0px"
+                    android:layout_height="21.0px"
+                    android:layout_marginLeft="18.0px"
+                    android:background="@drawable/act_cshw_salaryandtime_divider_bg" />
+
+                <TextView
+                    android:id="@+id/act_cshw_hours_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18.0px"
+                    android:layout_marginRight="60.0px"
+                    android:text="2小时"
+                    android:textColor="#ff231815"
+                    android:textSize="23.0px" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/act_cshw_salary_tips_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="90.0px"
+                android:layout_marginRight="90.0px"
+                android:lineSpacingMultiplier="1.4"
+                android:text="30元/小时，2小时起，线上付款有优惠适用于家庭日常清洁服务，不含室外玻璃、家电深度清洁"
+                android:textColor="#ff929292"
+                android:textSize="18.0px" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0px"
+                android:layout_marginTop="30.0px"
+                android:background="@drawable/act_common_as_divider_png" />
+
+            <LinearLayout
+                android:id="@+id/act_cshw_time_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="67.0px"
+                android:background="@drawable/common_white_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="68.0px"
+                android:paddingRight="68.0px">
+
+                <View
+                    android:layout_width="28.0px"
+                    android:layout_height="28.0px"
+                    android:background="@drawable/act_common_as_time_png1" />
+
+                <TextView
+                    android:id="@+id/act_cshw_timetitle_tv"
+                    android:layout_width="140.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0px"
+                    android:text="用工时间"
+                    android:textColor="#ff231815"
+                    android:textSize="24.0px" />
+
+                <TextView
+                    android:id="@+id/act_cshw_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0px"
+                    android:hint="点击选择用工时间"
+                    android:textColor="#ff231815"
+                    android:textColorHint="#ff929292"
+                    android:textSize="18.0px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2.0px"
+                android:background="#ffddddde" />
+
+            <LinearLayout
+                android:id="@+id/act_cshw_address_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="67.0px"
+                android:background="@drawable/common_white_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="68.0px"
+                android:paddingRight="68.0px">
+
+                <View
+                    android:layout_width="22.0px"
+                    android:layout_height="25.0px"
+                    android:layout_marginLeft="2.0px"
+                    android:background="@drawable/act_common_as_address_png" />
+
+                <TextView
+                    android:layout_width="140.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17.0px"
+                    android:text="服务地址"
+                    android:textColor="#ff231815"
+                    android:textSize="24.0px" />
+
+                <TextView
+                    android:id="@+id/act_cshw_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0px"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:hint="点击选择服务地址"
+                    android:singleLine="true"
+                    android:textColor="#ff231815"
+                    android:textColorHint="#ff929292"
+                    android:textSize="18.0px" />
+
+                <View
+                    android:layout_width="22.0px"
+                    android:layout_height="25.0px"
+                    android:layout_marginLeft="2.0px"
+                    android:background="@drawable/act_common_as_nextstep_png" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2.0px"
+                android:background="#ffddddde" />
+
+            <LinearLayout
+                android:id="@+id/act_cshw_otherneed_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="67.0px"
+                android:background="@drawable/common_white_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="68.0px"
+                android:paddingRight="68.0px">
+
+                <View
+                    android:layout_width="22.0px"
+                    android:layout_height="26.0px"
+                    android:layout_marginLeft="2.0px"
+                    android:background="@drawable/act_common_as_otherneed_png" />
+
+                <TextView
+                    android:layout_width="140.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17.0px"
+                    android:text="详细需求"
+                    android:textColor="#ff231815"
+                    android:textSize="24.0px" />
+
+                <TextView
+                    android:id="@+id/act_cshw_otherneed_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0px"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:hint="点击选择更多需求（选填）"
+                    android:singleLine="true"
+                    android:textColor="#ff231815"
+                    android:textColorHint="#ff929292"
+                    android:textSize="18.0px" />
+
+                <View
+                    android:layout_width="22.0px"
+                    android:layout_height="25.0px"
+                    android:layout_marginLeft="2.0px"
+                    android:background="@drawable/act_common_as_nextstep_png" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2.0px"
+                android:background="#ffd8d8d9" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="180.0px" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/act_cshw_commit_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="110.0px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/act_cshw_commit_tv"
+            android:layout_width="496.0px"
+            android:layout_height="67.0px"
+            android:background="@drawable/item_serveitem_order"
+            android:gravity="center"
+            android:text="提交预约"
+            android:textColor="@color/white"
+            android:textSize="24.0px"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

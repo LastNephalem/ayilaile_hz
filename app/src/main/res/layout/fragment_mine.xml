@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff1f1f1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="446px"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/act_login_title_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="368.0px"
+                        android:layout_height="130.0px"
+                        android:background="@drawable/act_login_bt_bg"
+                        android:text="登录"
+                        android:textColor="@color/green"
+                        android:textSize="30sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_userinfo_headimg"
+                    android:layout_width="236.0px"
+                    android:layout_height="236.0px"
+                    android:layout_marginLeft="112.0px"
+                    android:layout_marginTop="90.0px"
+                    android:background="@drawable/item_aunt_log1" />
+
+                <LinearLayout
+                    android:id="@+id/login_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="66.0px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_userinfo_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="昵称"
+                        android:textColor="#ff9fa0a0"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_userinfo_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="13041166651"
+                        android:textColor="#ff231815"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginTop="30.0px"
+            android:background="#ffc8c8c8" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/framine_myname_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/framine_item_selector"
+                android:paddingLeft="30.0px"
+                android:paddingRight="30.0px">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="120.0px">
+
+                    <View
+                        android:layout_width="69.0px"
+                        android:layout_height="70.0px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30.0px"
+                        android:background="@drawable/framine_myname_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="128.0px"
+                        android:text="我的姓名"
+                        android:textColor="#ff2f2e2e"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/fra_mine_detailsign_v1"
+                        android:layout_width="38.0px"
+                        android:layout_height="70.0px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/item_hourworker_to" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="26.0px"
+                        android:layout_toLeftOf="@id/fra_mine_detailsign_v1"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:hint="请输入姓名"
+                        android:maxLines="1"
+                        android:textColor="#ff2f2e2e"
+                        android:textColorHint="#ffb6b6b6"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="960.0px"
+                android:layout_height="1.0px"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffc8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/framine_mysmobile_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/framine_item_selector"
+                android:paddingLeft="30.0px"
+                android:paddingRight="30.0px">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="120.0px">
+
+                    <View
+                        android:id="@+id/fra_mine_detailsign_v2"
+                        android:layout_width="38.0px"
+                        android:layout_height="70.0px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/item_hourworker_to"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_mobile"
+                        android:layout_width="282.0px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="26.0px"
+                        android:layout_toLeftOf="@id/fra_mine_detailsign_v2"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxLines="1"
+                        android:textColor="#ff2f2e2e"
+                        android:textColorHint="#ffb6b6b6"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="128.0px"
+                        android:text="我的电话"
+                        android:textColor="#ff2f2e2e"
+                        android:textSize="20sp"
+                        android:id="@+id/textView2" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="56.0px"
+                        android:layout_height="70.0px"
+                        android:layout_marginLeft="36.0px"
+                        android:background="@drawable/framine_mymobile_img"
+                        android:layout_alignBottom="@+id/textView2"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="14dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffc8c8c8" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginTop="30.0px"
+            android:background="#ffc8c8c8" />
+
+        <LinearLayout
+            android:id="@+id/framine_mysave_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0px"
+            android:background="@drawable/framine_item_selector"
+            android:orientation="vertical"
+            android:paddingLeft="30.0px"
+            android:paddingRight="30.0px">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120.0px">
+
+                <View
+                    android:layout_width="69.0px"
+                    android:layout_height="70.0px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30.0px"
+                    android:background="@drawable/framine_mysave_img"
+                    android:id="@+id/view2" />
+
+                <View
+                    android:id="@+id/fra_mine_detailsign_v3"
+                    android:layout_width="38.0px"
+                    android:layout_height="70.0px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/item_hourworker_to" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="128.0px"
+                    android:text="我的关注"
+                    android:textColor="#ff2f2e2e"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/view2"
+                    android:layout_marginStart="13dp"
+                    android:id="@+id/textView3" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffc8c8c8" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginTop="30.0px"
+            android:background="#ffc8c8c8" />
+
+        <LinearLayout
+            android:id="@+id/framine_accountrecord_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0px"
+            android:background="@drawable/framine_item_selector"
+            android:orientation="vertical"
+            android:paddingLeft="30.0px"
+            android:paddingRight="30.0px">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120.0px">
+
+                <View
+                    android:layout_width="70.0px"
+                    android:layout_height="68.0px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30.0px"
+                    android:background="@drawable/framine_acountrecord_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="128.0px"
+                    android:text="充值付款记录"
+                    android:textColor="#ff2f2e2e"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/fra_mine_detailsign_v4"
+                    android:layout_width="38.0px"
+                    android:layout_height="70.0px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/item_hourworker_to"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffc8c8c8" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginTop="30.0px"
+            android:background="#ffc8c8c8" />
+
+        <LinearLayout
+            android:id="@+id/framine_address_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0px"
+            android:background="@drawable/framine_item_selector"
+            android:orientation="vertical"
+            android:paddingLeft="30.0px"
+            android:paddingRight="30.0px">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120.0px">
+
+                <View
+                    android:layout_width="60.0px"
+                    android:layout_height="70.0px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30.0px"
+                    android:background="@drawable/framine_address_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="128.0px"
+                    android:text="服务地址"
+                    android:textColor="#ff2f2e2e"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/fra_mine_detailsign_v5"
+                    android:layout_width="38.0px"
+                    android:layout_height="70.0px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/item_hourworker_to" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffc8c8c8" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginTop="30.0px"
+            android:background="#ffc8c8c8" />
+
+        <LinearLayout
+            android:id="@+id/framine_settings_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0px"
+            android:background="@drawable/framine_item_selector"
+            android:orientation="vertical"
+            android:paddingLeft="30.0px"
+            android:paddingRight="30.0px">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120.0px">
+
+                <View
+                    android:layout_width="70.0px"
+                    android:layout_height="70.0px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30.0px"
+                    android:background="@drawable/framine_settings_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="128.0px"
+                    android:text="设置"
+                    android:textColor="#ff2f2e2e"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/fra_mine_detailsign_v6"
+                    android:layout_width="38.0px"
+                    android:layout_height="70.0px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/item_hourworker_to" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffc8c8c8" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginTop="30.0px"
+            android:background="#ffc8c8c8" />
+
+        <LinearLayout
+            android:id="@+id/framine_share_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0px"
+            android:background="@drawable/framine_item_selector"
+            android:orientation="vertical"
+            android:paddingLeft="30.0px"
+            android:paddingRight="30.0px">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120.0px">
+
+                <View
+                    android:layout_width="70.0px"
+                    android:layout_height="66.0px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30.0px"
+                    android:background="@drawable/framine_invitefriend_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="128.0px"
+                    android:text="分享"
+                    android:textColor="#ff2f2e2e"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/fra_mine_detailsign_v7"
+                    android:layout_width="38.0px"
+                    android:layout_height="70.0px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/item_hourworker_to"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffc8c8c8" />
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="800.0px"
+            android:layout_height="118.0px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30.0px"
+            android:layout_marginTop="54.0px"
+            android:background="@drawable/framine_exitbtn_click"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_hotline"
+            android:layout_width="800.0px"
+            android:layout_height="118.0px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30.0px"
+            android:layout_marginTop="54.0px"
+            android:background="@drawable/bg_hotline"
+            android:gravity="center"
+            android:text="服务热线：12580"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

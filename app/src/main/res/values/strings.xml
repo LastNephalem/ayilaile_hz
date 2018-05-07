@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">阿姨来了</string>
+    <string name="act_main_txt_home">主页</string>
+    <string name="act_main_txt_lifesquare">生活</string>
+    <string name="act_main_txt_order">订单</string>
+    <string name="act_main_txt_mine">个人</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

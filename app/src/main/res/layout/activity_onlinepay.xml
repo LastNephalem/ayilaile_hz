@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff1f1f1"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="244.0px"
+                android:layout_gravity="center"
+                android:background="@drawable/act_online_pay_top_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="75.0px"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60.0px"
+                        android:layout_height="60.0px"
+                        android:src="@drawable/act_online_pay_img_salary"
+                        android:id="@+id/imageView" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0px"
+                        android:text="线上支付 :"
+                        android:textColor="@color/white"
+                        android:textSize="45.0px" />
+
+                    <TextView
+                        android:id="@+id/act_op_txt_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0px"
+                        android:textColor="#fff2eb35"
+                        android:textSize="70.0px"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffc8c8c8" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="116.0px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25.0px"
+                    android:layout_marginLeft="62.0px"
+                    android:text="请选择支付方式"
+                    android:textColor="#ff898989"
+                    android:textSize="30.0px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffc8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/act_op_llayout_weixin_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="92.0px"
+                android:background="@drawable/common_white_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="30.0px">
+
+                <View
+                    android:layout_width="60.0px"
+                    android:layout_height="60.0px"
+                    android:layout_marginLeft="62.0px"
+                    android:background="@drawable/act_online_pay_img_weixin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62.0px"
+                    android:layout_weight="1.0"
+                    android:text="微信支付"
+                    android:textColor="#ff2f2e2e"
+                    android:textSize="30.0px" />
+
+                <View
+                    android:layout_width="18.0px"
+                    android:layout_height="30.0px"
+                    android:background="@drawable/act_online_pay_img_link" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffc8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/act_op_llayout_alipay_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="92.0px"
+                android:background="@drawable/common_white_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="30.0px">
+
+                <View
+                    android:layout_width="112.0px"
+                    android:layout_height="36.0px"
+                    android:layout_marginLeft="36.0px"
+                    android:background="@drawable/act_online_pay_img_alipay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0px"
+                    android:layout_weight="1.0"
+                    android:text="支付宝支付"
+                    android:textColor="#ff2f2e2e"
+                    android:textSize="30.0px" />
+
+                <View
+                    android:layout_width="18.0px"
+                    android:layout_height="30.0px"
+                    android:background="@drawable/act_online_pay_img_link" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffc8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/act_op_llayout_balance_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="92.0px"
+                android:background="@drawable/common_white_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="30.0px">
+
+                <View
+                    android:layout_width="60.0px"
+                    android:layout_height="60.0px"
+                    android:layout_marginLeft="62.0px"
+                    android:background="@drawable/act_online_pay_img_balance" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62.0px"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/act_op_txt_balance_pay_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="余额支付"
+                        android:textColor="#ff2f2e2e"
+                        android:textSize="30.0px" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="余额:"
+                            android:textColor="#ffadadad"
+                            android:textSize="28.0px" />
+
+                        <TextView
+                            android:id="@+id/act_op_txt_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ff2f2e2e"
+                            android:textSize="30.0px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4.0px"
+                            android:text="20元"
+                            android:textColor="#ffadadad"
+                            android:textSize="30.0px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="18.0px"
+                    android:layout_height="30.0px"
+                    android:background="@drawable/act_online_pay_img_link" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffc8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/act_op_llayout_tenpay_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="92.0px"
+                android:background="@drawable/common_white_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="30.0px"
+                android:visibility="visible">
+
+                <View
+                    android:layout_width="116.0px"
+                    android:layout_height="41.0px"
+                    android:layout_marginLeft="32.0px"
+                    android:background="@drawable/act_online_pay_img_tenpay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44.0px"
+                    android:layout_weight="1.0"
+                    android:text="财付通支付"
+                    android:textColor="#ff2f2e2e"
+                    android:textSize="30.0px" />
+
+                <View
+                    android:layout_width="18.0px"
+                    android:layout_height="30.0px"
+                    android:background="@drawable/act_online_pay_img_link" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffc8c8c8" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

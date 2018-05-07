@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/act_ad_rlayout_header"
+            android:layout_width="fill_parent"
+            android:layout_height="290.0px"
+            android:background="@drawable/act_agentinfo_bg">
+
+            <LinearLayout
+                android:id="@+id/act_ad_llayout_left"
+                android:layout_width="120.0px"
+                android:layout_height="90.0px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <View
+                    android:id="@+id/common_title_left_img_back"
+                    android:layout_width="20.0px"
+                    android:layout_height="36.0px"
+                    android:layout_marginLeft="35.0px"
+                    android:background="@drawable/common_title_left_btn_back_selector" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/act_ad_rlayout_right"
+                android:layout_width="120.0px"
+                android:layout_height="90.0px"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/common_title_right_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35.0px"
+                    android:background="@drawable/common_title_right_btn_share_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/act_ad_rlayout_h"
+                android:layout_width="116.0px"
+                android:layout_height="147.0px"
+                android:layout_below="@id/act_ad_llayout_left"
+                android:layout_marginLeft="30.0px"
+                android:background="@drawable/common_headimg_bg">
+
+                <ImageView
+                    android:id="@+id/act_ad_img_aunt_header"
+                    android:layout_width="110.0px"
+                    android:layout_height="140.0px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="1.0px"
+                    android:layout_marginTop="4.0px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_header_110140" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/act_ad_txt_aunt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/act_ad_llayout_left"
+                android:layout_marginLeft="26.0px"
+                android:layout_marginTop="25.0px"
+                android:layout_toRightOf="@id/act_ad_rlayout_h"
+                android:text="--"
+                android:textColor="@color/white"
+                android:textSize="36.0px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/act_ad_txt_aunt_name"
+                android:layout_marginLeft="26.0px"
+                android:layout_marginTop="10.0px"
+                android:layout_toRightOf="@id/act_ad_rlayout_h"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/act_ad_txt_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="@color/white"
+                    android:textSize="28.0px" />
+
+                <TextView
+                    android:id="@+id/act_aunt_details_refprice_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/act_ad_txt_salary"
+                    android:layout_below="@id/act_ad_txt_salary"
+                    android:text="(参考价格)"
+                    android:textColor="@color/white"
+                    android:textSize="28.0px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/act_ad_llayout_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="36.0px"
+                android:layout_marginRight="30.0px">
+
+                <View
+                    android:id="@+id/act_ad_v_no_collection"
+                    android:layout_width="144.0px"
+                    android:layout_height="60.0px"
+                    android:background="@drawable/act_agentinfo_unsaved_img" />
+
+                <View
+                    android:id="@+id/act_ad_v_collection"
+                    android:layout_width="170.0px"
+                    android:layout_height="60.0px"
+                    android:background="@drawable/act_agentinfo_saved_img"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/act_ad_rlayout_header"
+            android:layout_weight="1.0"
+            android:fadingEdge="none"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="90.0px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/act_ad_txt_edutation"
+                            android:layout_width="212.0px"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="--"
+                            android:textColor="#ff4d4d4d"
+                            android:textSize="26.0px" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1.0px"
+                        android:layout_height="40.0px"
+                        android:background="@drawable/info_divider"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/act_ad_txt_age"
+                            android:layout_width="212.0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center_horizontal"
+                            android:text="--"
+                            android:textColor="#ff4d4d4d"
+                            android:textSize="26.0px" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1.0px"
+                        android:layout_height="40.0px"
+                        android:background="@drawable/info_divider" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/act_ad_txt_hometown"
+                            android:layout_width="212.0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:text="--"
+                            android:textColor="#ff4d4d4d"
+                            android:textSize="26.0px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="#ffc8c8c8" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="44.0px"
+                        android:layout_marginTop="23.0px"
+                        android:background="@drawable/act_ad_img_label"
+                        android:gravity="center"
+                        android:paddingLeft="20.0px"
+                        android:text="详细个人资料"
+                        android:textColor="@color/white"
+                        android:textSize="24.0px" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="40.0px"
+                        android:layout_marginRight="40.0px"
+                        android:layout_marginTop="34.0px"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="147.0px"
+                                android:layout_height="wrap_content"
+                                android:text="民        族:"
+                                android:textColor="#ff787878"
+                                android:textSize="24.0px" />
+
+                            <TextView
+                                android:id="@+id/act_ad_txt_nation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textColor="#ff3d3d3d"
+                                android:textSize="24.0px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28.0px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="147.0px"
+                                android:layout_height="wrap_content"
+                                android:text="属        相:"
+                                android:textColor="#ff787878"
+                                android:textSize="24.0px" />
+
+                            <TextView
+                                android:id="@+id/act_ad_txt_zodiac"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textColor="#ff3d3d3d"
+                                android:textSize="24.0px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28.0px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="147.0px"
+                                android:layout_height="wrap_content"
+                                android:text="星        座:"
+                                android:textColor="#ff787878"
+                                android:textSize="24.0px" />
+
+                            <TextView
+                                android:id="@+id/act_ad_txt_constellation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textColor="#ff3d3d3d"
+                                android:textSize="24.0px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28.0px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="147.0px"
+                                android:layout_height="wrap_content"
+                                android:text="现居住地:"
+                                android:textColor="#ff787878"
+                                android:textSize="24.0px" />
+
+                            <TextView
+                                android:id="@+id/act_ad_txt_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textColor="#ff3d3d3d"
+                                android:textSize="24.0px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28.0px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="147.0px"
+                                android:layout_height="wrap_content"
+                                android:text="阿姨评价:"
+                                android:textColor="#ff787878"
+                                android:textSize="24.0px" />
+
+                            <TextView
+                                android:id="@+id/act_ad_txt_introducation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textColor="#ff3d3d3d"
+                                android:textSize="24.0px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28.0px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="147.0px"
+                                android:layout_height="wrap_content"
+                                android:text="求职意向:"
+                                android:textColor="#ff787878"
+                                android:textSize="24.0px" />
+
+                            <TextView
+                                android:id="@+id/act_ad_txt_intention"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textColor="#ff3d3d3d"
+                                android:textSize="24.0px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28.0px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="147.0px"
+                                android:layout_height="wrap_content"
+                                android:text="擅长领域:"
+                                android:textColor="#ff787878"
+                                android:textSize="24.0px" />
+
+                            <TextView
+                                android:id="@+id/act_ad_txt_speciality"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textColor="#ff3d3d3d"
+                                android:textSize="24.0px" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_marginTop="40.0px"
+                        android:background="#ffdadada" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="20.0px"
+                        android:background="#fff1f1f1" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:background="#ffdadada" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="44.0px"
+                        android:layout_marginTop="23.0px"
+                        android:background="@drawable/act_ad_img_label"
+                        android:gravity="center"
+                        android:paddingLeft="20.0px"
+                        android:text="阿姨来了官方认证信息"
+                        android:textColor="@color/white"
+                        android:textSize="24.0px" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40.0px"
+                        android:layout_marginRight="40.0px"
+                        android:layout_marginTop="28.0px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="147.0px"
+                            android:layout_height="wrap_content"
+                            android:text="实名认证"
+                            android:textColor="#ff787878"
+                            android:textSize="24.0px" />
+
+                        <View
+                            android:layout_width="29.0px"
+                            android:layout_height="31.0px"
+                            android:background="@drawable/act_ad_img_attestation" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="98.0px"
+                        android:layout_marginLeft="174.0px"
+                        android:layout_marginRight="40.0px"
+                        android:layout_marginTop="20.0px"
+                        android:background="@drawable/act_ad_code_bg"
+                        android:orientation="vertical"
+                        android:paddingLeft="18.0px"
+                        android:paddingRight="18.0px">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="身份证号:"
+                                android:textColor="#ff3d3d3d"
+                                android:textSize="24.0px" />
+
+                            <TextView
+                                android:id="@+id/act_ad_txt_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="42.0px"
+                                android:text="--"
+                                android:textColor="#ff3d3d3d"
+                                android:textSize="24.0px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="户籍所在地:"
+                                android:textColor="#ff3d3d3d"
+                                android:textSize="24.0px" />
+
+                            <TextView
+                                android:id="@+id/act_ad_txt_household"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20.0px"
+                                android:text="--"
+                                android:textColor="#ff3d3d3d"
+                                android:textSize="24.0px" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40.0px"
+                        android:layout_marginRight="40.0px"
+                        android:layout_marginTop="28.0px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="147.0px"
+                            android:layout_height="wrap_content"
+                            android:text="证件备案"
+                            android:textColor="#ff787878"
+                            android:textSize="24.0px" />
+
+                        <View
+                            android:layout_width="29.0px"
+                            android:layout_height="31.0px"
+                            android:background="@drawable/act_ad_img_check" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40.0px"
+                        android:layout_marginRight="40.0px"
+                        android:layout_marginTop="28.0px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="147.0px"
+                            android:layout_height="wrap_content"
+                            android:text="技能考核"
+                            android:textColor="#ff787878"
+                            android:textSize="24.0px" />
+
+                        <View
+                            android:layout_width="29.0px"
+                            android:layout_height="31.0px"
+                            android:background="@drawable/act_ad_img_check" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40.0px"
+                        android:layout_marginRight="40.0px"
+                        android:layout_marginTop="28.0px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="147.0px"
+                            android:layout_height="wrap_content"
+                            android:text="官方培训"
+                            android:textColor="#ff787878"
+                            android:textSize="24.0px" />
+
+                        <View
+                            android:layout_width="29.0px"
+                            android:layout_height="31.0px"
+                            android:background="@drawable/act_ad_img_check" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_marginTop="40.0px"
+                        android:background="#ffdadada" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="20.0px"
+                        android:background="#fff1f1f1" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:background="#ffdadada" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffdadada" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130.0px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/act_ad_txt_order"
+                android:layout_width="580.0px"
+                android:layout_height="90.0px"
+                android:background="@drawable/item_serveitem_order"
+                android:gravity="center"
+                android:text="预约阿姨"
+                android:textColor="@color/white"
+                android:textSize="32.0px"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
